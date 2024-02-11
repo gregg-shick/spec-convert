@@ -142,7 +142,31 @@ socket server with BMC.
 SMC devices *shall* implement DMTF DSP0236 ([Management Component Transport Protocol (MCTP) Base Specification](https://www.dmtf.org/dsp/DSP0236)).
 
 #### 5.1 Physical Bindings supported
-Devices meeting this specification shall implement DMTF DSP0233 ([Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)) OR DSP0237 ([Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)) OR DSP0238 (MCTP) PCIe VDM Transport Binding Specification. Other physical bindings, such as USB, that have MCTP bindings are allowed. Devices shall implement these protocols without requiring an on-board i2c mux in the protocol path.
+Devices meeting this specification shall implement DMTF DSP0233 ([Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)) OR DSP0237 ([Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)) OR DSP0238 ([Management Component Transport Protocol (MCTP) PCIe VDM Transport Binding Specification](https://www.dmtf.org/dsp/DSP0238)). Other physical bindings such as USB, that have MCTP bindings are allowed. Devices shall implement these protocols without requiring an on-board i2c mux in the protocol path.
+
+insert image here
+
+#### 5.2 Protocol layers supported
+
+5.2.1
+* Compliance with MCTP Base Protocol Specification  
+
+     i. The device will comply to all Endpoint requirements as specified in this section
+     
+     ii. For SMBus (Binding) Protocol, the device shall not be the MCTP Bus Owner
+
+     iii. "The device shall support receiving an MCTP Set Endpoint ID command at any time (Standby or Main) power is applied. For example, the BMC firmware could be updated resulting in a BMC reset. The BMC initialization sequence will go out and dynamically discover devices and assign Endpoint IDs. While in most cases, the same Endpoint ID will be assigned, this is not guaranteed. The BMC will query the device to see if an Endpoint ID has been previously assigned and is not in conflict with any other assigned Endpoint.
+
+* Specific compliance with Section “MCTP Message Types”
+* Compliance with Section “MCTP Control Protocol”
+* Compliance with Section “MCTP Control Messages”
+* Support Section “MCTP Control Message Command Codes”, “MCTP Control Command
+Numbers”
+* Support Section “Prepare for Endpoint Discovery”
+* Support Section “Endpoint Discovery”
+
+
+
 
 ### 6. API Surface
 
