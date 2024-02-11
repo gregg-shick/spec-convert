@@ -219,5 +219,54 @@ If an SMC device possess fans, the SMC SensorCollection shall implement a Sensor
 * *ReadingUnits: Shall* be present and implemented as “{rev}/min”
 * *ReadingType: Shall* be present and implemented as “Rotational”
 
+Devices implementing a single replaceable component may implement PLDM type 2 for sensor readings.
+
+**PLDM Type 2 Sensor Requirements**
+
+Insert table here
+
+
+Devices implementing multiple replaceable components shall implement ThermalSubsystem over RDE.
+
+**ThermalSubsystem**
+
+An SMC Redfish ThermalSubsystem *shall* be implemented, with the following properties:
+
+* *Fans*: With Fan resources representing the fans physically present on this device.
+* Fan resources *shall* contain the following properties
+   - *SpeedPercent*
+ 
+#### 6.2 Inventory Management
+
+Requirements within this section are intended to allow inventory management and control of a given device. SMC devices *shall* implement:
+
+**ChassisCollection**
+
+The ChassisCollection in the device *shall* contain one or more Chassis Resources representing the device in question. Chassis resources shall implement the following properties:
+
+* Model: The value of this property *shall* match the “Product Name” field present in the FRU identification from section 5.3
+* Manufacturer:The value of this property *shall* match the “Manufacturer Name” field present in the FRU identification from section 5.3
+* SerialNumber: The value of this property *shall* match the “Serial Number” field present in the FRU identification from section 5.3
+
+SMC devices *may* implement more than one Chassis resource, for representing physical subsystems within the device. Within the SMC chassis collection, there *shall* be only one Chassis instance (referred to further as the “root”) that does not possess a ContainedBy attribute, and is intended to represent the overall containment of the device. All other devices *shall* have a ContainedBy Link, traceable to the root device. Root devices *shall* implement a “Contains” property representing the devices containment
+
+#### 6.3 Software Management
+
+SMC devices implementing multiple updatable components shall implement an UpdateService. The SMC UpdateService shall implement one or more of FirmwareInventory, or SoftwareInventory collections.
+
+Collections shall contain at least one member of type SoftwareInventory, implementing the following properties
+
+* **Version**: A string representing the software version running on the SMC device.
+* **Updateable**: A property that conveys whether or not the device supports update.
+For SMC devices, this shall be set to True.
+* **SoftwareID**: A property to uniquely identify this devices firmware type.
+* **AdditionalVersions**: Devices that fit the Redfish descriptions in these properties
+shall implement AdditionalVersions, with the appropriate subproperties. Devices that do not fit the description shall omit the AdditionalVersions Property.
+
+Devices implementing a single updatable component should implement updates of their firmware via PLDM type 5 (DSP0267 Section 6).
+
+
+
+
 
 
