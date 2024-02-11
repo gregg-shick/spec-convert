@@ -142,15 +142,15 @@ socket server with BMC.
 SMC devices *shall* implement DMTF DSP0236 ([Management Component Transport Protocol (MCTP) Base Specification](https://www.dmtf.org/dsp/DSP0236)).
 
 #### 5.1 Physical Bindings supported
-Devices meeting this specification shall implement DMTF DSP0233 ([Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)) OR DSP0237 ([Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)) OR DSP0238 ([Management Component Transport Protocol (MCTP) PCIe VDM Transport Binding Specification](https://www.dmtf.org/dsp/DSP0238)). Other physical bindings such as USB, that have MCTP bindings are allowed. Devices shall implement these protocols without requiring an on-board i2c mux in the protocol path.
+Devices meeting this specification *shall* implement DMTF DSP0233 ([Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)) OR DSP0237 ([Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)) OR DSP0238 ([Management Component Transport Protocol (MCTP) PCIe VDM Transport Binding Specification](https://www.dmtf.org/dsp/DSP0238)). Other physical bindings such as USB, that have MCTP bindings are allowed. Devices *shall* implement these protocols without requiring an on-board i2c mux in the protocol path.
 
 insert image here
 
 #### 5.2 Protocol layers supported
 
-5.2.1
-* Compliance with MCTP Base Protocol Specification  
-
+5.2.1 MCTP
+* Compliance with MCTP Base Protocol Specification
+     
      i. The device will comply to all Endpoint requirements as specified in this section
      
      ii. For SMBus (Binding) Protocol, the device shall not be the MCTP Bus Owner
@@ -164,6 +164,30 @@ insert image here
 Numbers”
 * Support Section “Prepare for Endpoint Discovery”
 * Support Section “Endpoint Discovery”
+
+5.2.2 PLDM
+
+Insert table
+
+5.2.3 Redfish Device Enablement
+
+Devices *shall* implement DSP0218 ([Platform Level Data Model (PLDM) for Redfish Device Enablement](https://www.dmtf.org/dsp/DSP0218))  
+
+Devices *shall* support 1 and should support a minimum of 4 concurrent RDE tree operations in parallel.  
+
+Devices should be capable of returning the requested portions of the Redfish tree in less than 2 seconds.
+
+Insert table
+
+#### 5.3 Device Identification
+
+For purposes of identification, devices meeting this specification *shall* expose an interface to a Platform Management FRU Information Storage Definition-compatible API. The SMC API does not specify where this FRU payload must be physically implemented within the card. Implementations may choose to implement in a physical eeprom device, or a virtual eeprom device. Care should be taken in platform design to ensure that the eeprom is available in the required power states consistent with the needs of the baseline server, but this specification does not specify which power states it will be available in. Devices *shall* implement the following minimum fields.
+
+**Product info area:**
+
+* Manufacturer Name
+* Product Name
+* Product Serial Number
 
 
 
