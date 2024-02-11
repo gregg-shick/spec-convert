@@ -209,6 +209,15 @@ The thermal management subsystem within this specification is intended to allow 
 
 An SMC SensorCollection *shall* implement one or more sensor resources representing the thermal temperature of the device. The sensor *shall* have the following properties supported.
 
+* *ReadingUnits: Shall* be presented and implement as "Cel"
+* *ReadingType: Shall* be present and implemented as “Temperature”
+* Threshold properties of *UpperCritical*, *UpperFatal*, *LowerCritical*, and *LowerFatal* *shall* be
+implemented and represent the design limits of the SMC device in question. Devices with unlimited thermal design limits *shall* omit these properties.
+
+If an SMC device possess fans, the SMC SensorCollection shall implement a Sensor with the following properties:
+
+* *ReadingUnits: Shall* be present and implemented as “{rev}/min”
+* *ReadingType: Shall* be present and implemented as “Rotational”
 
 
 
