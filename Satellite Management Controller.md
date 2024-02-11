@@ -1,5 +1,7 @@
-<p align=center> OPEN </p>
-<h1 align="center"> Compute Project </h1>
+
+# Open Compute Project  
+
+
 
 ##### Satellite Management Controller
 ##### (Auxiliary Management Controller)
@@ -21,6 +23,8 @@ Author: BJ Kim
 Author: Mike Allison  
 
 ### Table of Contents
+
+Insert this
 
 ### Glossary of Terms
 
@@ -47,6 +51,18 @@ any CPU architecture and configuration is acceptable.
 words, terminal hardware does not itself manage other hardware. Satellites are terminal hardware.
 
 ### 1. License
+INSERT THIS
+### 1.2 Acknowledgements
+The Contributors of this Specification would like to acknowledge the following companies for their feedback:
+
+Hewlett Packard Enterprise  
+Google  
+Samsung  
+Dell  
+Meta
+
+### 1.3 References
+Insert this
 
 ### 2. Compliance with OCP Tenants
 #### 2.1 Openness
@@ -84,6 +100,7 @@ no matter the size, to more effectively meet sustainability targets. SMC thermal
 management capabilities can be utilized to enable this goal of minimizing power requirements
 and overall energy usage
 ### 3. Change Log
+Insert this
 
 ### 4. Overview
 The Satellite Management Controller specification defines a validatable management interface
@@ -114,13 +131,15 @@ exist that this specification fulfills, the above diagram is considered the base
 may reference elements of the baseline configuration as examples. Other configurations may exist.  
 
 The SMC specification explicitly does not define any physical connectors, physical form factors, or
-specifications for non SMC components, although other specifications (such as the Modular
-Hardware Management DC-SCM) may define connector specifications that may be used in
+specifications for non SMC components, although other specifications (such as the [Modular
+Hardware Management DC-SCM](https://www.opencompute.org/documents/ocp-dc-scm-spec-rev-1-0-pdf)) may define connector specifications that may be used in
 deployments. For some examples, this specification may assume a PCIe 16X connector, and a single
 socket server with BMC.
 
 
 ### 5. Protocols
+
+SMC devices *shall* implement DSP0236 (Management Component Transport Protocol (MCTP) Base Specification).
 
 ### 6. API Surface
 
