@@ -189,13 +189,25 @@ For purposes of identification, devices meeting this specification *shall* expos
 * Product Name
 * Product Serial Number
 
+Other fields may be populated at the device's discretion.
 
+#### 5.4 Device Classes
 
+The following device classes are supported: Accelerator, NIC, DPU (SmartNIC), Storage Tray, Memory (CXL).
 
 ### 6. API Surface
 
+The below table calls out for the various device classes, whether a given feature is Required (R) or Conditional (C) on existence of the feature. For example, an Accelerator device may not have a Fan and thus Fan Control is conditional.
 
+Insert table here
 
+#### 6.1 Thermal management
+
+The thermal management subsystem within this specification is intended to allow SMC devices to be managed by a system closed loop thermal system. Devices required to implement the thermal management subsystem *shall* implement the following Redfish resources and properties.
+
+**Sensor**
+
+An SMC SensorCollection *shall* implement one or more sensor resources representing the thermal temperature of the device. The sensor *shall* have the following properties supported.
 
 
 
