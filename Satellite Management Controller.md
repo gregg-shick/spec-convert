@@ -139,7 +139,7 @@ socket server with BMC.
 
 ### 5. Protocols
 
-SMC devices *shall* implement DSP0236 (Management Component Transport Protocol (MCTP) Base Specification).
+SMC devices *shall* implement DSP0236 ([Management Component Transport Protocol (MCTP) Base Specification](https://www.dmtf.org/dsp/DSP0236).
 
 ### 6. API Surface
 
