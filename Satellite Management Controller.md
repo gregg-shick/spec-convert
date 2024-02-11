@@ -139,7 +139,10 @@ socket server with BMC.
 
 ### 5. Protocols
 
-SMC devices *shall* implement DSP0236 ([Management Component Transport Protocol (MCTP) Base Specification](https://www.dmtf.org/dsp/DSP0236).
+SMC devices *shall* implement DMTF DSP0236 ([Management Component Transport Protocol (MCTP) Base Specification](https://www.dmtf.org/dsp/DSP0236)).
+
+#### 5.1 Physical Bindings supported
+Devices meeting this specification shall implement DMTF DSP0233 ([Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)) OR DSP0237 ([Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)) OR DSP0238 (MCTP) PCIe VDM Transport Binding Specification. Other physical bindings, such as USB, that have MCTP bindings are allowed. Devices shall implement these protocols without requiring an on-board i2c mux in the protocol path.
 
 ### 6. API Surface
 
