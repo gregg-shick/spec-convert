@@ -23,7 +23,7 @@ Author: Mike Allison
 
 ### Table of Contents
 
-Insert this
+INSERT TOC
 
 ### Glossary of Terms
 
@@ -164,7 +164,7 @@ links.
 
 #### 4.1 Architectural Example
 
-**insert pic here**
+INSERT PIC HERE
 
 SMC includes all API definitions required for managing a peripheral device from an out of band
 management controller (BMC) in the most common configuration. While other configurations may
@@ -185,7 +185,7 @@ SMC devices *shall* implement DMTF DSP0236 ([Management Component Transport Prot
 #### 5.1 Physical Bindings supported
 Devices meeting this specification *shall* implement DMTF DSP0233 ([Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)) OR DSP0237 ([Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)) OR DSP0238 ([Management Component Transport Protocol (MCTP) PCIe VDM Transport Binding Specification](https://www.dmtf.org/dsp/DSP0238)). Other physical bindings such as USB, that have MCTP bindings are allowed. Devices *shall* implement these protocols without requiring an on-board i2c mux in the protocol path.
 
-insert image here
+iINSERT IMAGE HERE
 
 #### 5.2 Protocol layers supported
 
@@ -206,11 +206,13 @@ Numbers”
 * Support Section “Prepare for Endpoint Discovery”
 * Support Section “Endpoint Discovery”
 
-5.2.2 PLDM
+INSERT TABLE HERE
 
-Insert table
+##### 5.2.2 PLDM
 
-5.2.3 Redfish Device Enablement
+INSERT TABLE HERE
+
+##### 5.2.3 Redfish Device Enablement
 
 Devices *shall* implement DSP0218 ([Platform Level Data Model (PLDM) for Redfish Device Enablement](https://www.dmtf.org/dsp/DSP0218))  
 
@@ -218,7 +220,7 @@ Devices *shall* support 1 and should support a minimum of 4 concurrent RDE tree 
 
 Devices should be capable of returning the requested portions of the Redfish tree in less than 2 seconds.
 
-Insert table
+INSERT TABLE  HERE
 
 #### 5.3 Device Identification
 
