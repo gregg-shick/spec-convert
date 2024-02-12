@@ -21,10 +21,6 @@ Author: Kavin Lee
 Author: BJ Kim  
 Author: Mike Allison  
 
-### Table of Contents
-
-INSERT TOC
-
 ### Glossary of Terms
 
 This section provides definitions for terms used in this document.  
