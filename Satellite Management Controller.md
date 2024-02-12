@@ -1,15 +1,14 @@
 
-# Open Compute Project  
+<h1 align=center> Open Compute Project  </h1>
 
 
 
-##### Satellite Management Controller
-##### (Auxiliary Management Controller)
+<h3 align=center> Satellite Management Controller </h3>  
+<h3 align=center> (Auxiliary Management Controller) </h3>
+<h3 align=center> Revision 1.0, Version 1.0 </h3>
+<h3 align=center> Base Specification </h3>
 
-##### Revision 1.0, Version 1.0
-
-
-##### Base Specification
+</br>
 
 
 Author: Chad Yoshikawa  
