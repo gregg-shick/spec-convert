@@ -258,7 +258,11 @@ RDE Command (DSP0218) | Response Data| Implementation
 0x03 GetSchemaDictionary | &nbsp; | Required
 0x04 GetSchemaURI | &nbsp; | Required
 0x05 GetResourceETag | &nbsp; | Required
-
+0x08 GetRegistryCount | &nbsp; | Required for full event support
+0x09 GetRegistryDetails | &nbsp; | Required for full event support
+0x0A SelectRegistryVersion | &nbsp; | Required for full event support
+0x0B GetMessageRegistry | &nbsp; | Required for full event support
+0x10 RDEOperationInit | &nbsp; | Required for full event support
 
 
 
