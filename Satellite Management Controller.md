@@ -425,6 +425,8 @@ SPDM Request Codes (DSP0274) | &nbsp; | Implementation
 0x83 CHALLENGE | &nbsp; | Required
 0x84 GET_VERSION | &nbsp; | Required
 0xE0 GET_MEASUREMENTS | &nbsp; | Required
+&nbsp; | MEAS_CAP=10b | Required
+
 
 
 **Security Requirements**  
