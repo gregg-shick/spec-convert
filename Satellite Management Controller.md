@@ -96,12 +96,12 @@ Meta
 - DMTF DSP0233 - [Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)
 - DMTF DSP0236 - [Management Component Transport Protocol (MCTP) Base Specification](https://www.dmtf.org/dsp/DSP0236)
 - DMTF DSP0237 - [Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)
-- DMTF DSP0238 - 
-- DMTF DSP0240 - 
-- DMTF DSP0241 - 
-- DMTF DSP0248 - 
-- DMTF DSP0267 - 
-- DMTF DSP0274 - 
+- DMTF DSP0238 - [Management Component Transport Protocol (MCTP) PCIe VDM Transport Binding Specification](https://www.dmtf.org/dsp/DSP0238)
+- DMTF DSP0240 - [Platform Level Data Model (PLDM) Base Specification](https://www.dmtf.org/dsp/DSP0240)
+- DMTF DSP0241 - [Platform Level Data Model (PLDM) Over MCTP Binding Specification](https://www.dmtf.org/dsp/DSP0241)
+- DMTF DSP0248 - [Platform Level Data Model (PLDM) for Platform Monitoring and Control Specification](https://www.dmtf.org/dsp/DSP0248)
+- DMTF DSP0267 - [Platform Level Data Model (PLDM) for Firmware Update Specification](https://www.dmtf.org/dsp/DSP0267)
+- DMTF DSP0274 - [Security Protocol and Data Model (SPDM) Specification](https://www.dmtf.org/dsp/DSP0274)
     
 
 
