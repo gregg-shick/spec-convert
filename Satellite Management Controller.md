@@ -253,6 +253,12 @@ RDE Command (DSP0218) | Response Data| Implementation
 0x01 NegotiateRedfishParameters | &nbsp; | Required
 &nbsp;  | DeviceCapabilitiesFlags | Support atomic resource read to enable consistent reads
 &nbsp; | DeviceFeatureSupport | Head and replace optional. Read mandatory. Other features are optional for inventory-only devices and mandatory for full support.
+&nbsp; | DeviceConfigurationSignature | Required as documented
+0x02 NegotiateMediumParameters | &nbsp; | Required
+0x03 GetSchemaDictionary | &nbsp; | Required
+0x04 GetSchemaURI | &nbsp; | Required
+0x05 GetResourceETag | &nbsp; | Required
+
 
 
 
