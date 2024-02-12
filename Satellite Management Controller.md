@@ -248,9 +248,9 @@ Devices *shall* support 1 and should support a minimum of 4 concurrent RDE tree 
 
 Devices should be capable of returning the requested portions of the Redfish tree in less than 2 seconds.
 
-RDE Command (DSP0218) | | Implementation
+RDE Command (DSP0218) | Response Data| Implementation
 :- | :- | :- |
-0x01 NegotiateRedfishParameters | Response Data | Required
+0x01 NegotiateRedfishParameters | &nbsp; | Required
 &nbsp;  | DeviceCapabilitiesFlags | Support atomic resource read to enable consistent reads
 &nbsp; | DeviceFeatureSupport | Head and replace optional. Read mandatory. Other features are optional for inventory-only devices and mandatory for full support.
 
