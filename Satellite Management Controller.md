@@ -361,7 +361,6 @@ SMC devices *may* implement more than one Chassis resource, for representing phy
 #### 6.3 Software Management
 
 SMC devices implementing multiple updatable components shall implement an UpdateService. The SMC UpdateService shall implement one or more of FirmwareInventory, or SoftwareInventory collections.
-
 Collections shall contain at least one member of type SoftwareInventory, implementing the following properties
 
 * **Version**: A string representing the software version running on the SMC device.
@@ -373,7 +372,28 @@ shall implement AdditionalVersions, with the appropriate subproperties. Devices 
 
 Devices implementing a single updatable component should implement updates of their firmware via PLDM type 5 ([DSP0267 Section 6](https://www.dmtf.org/dsp/DSP0267)).
 
-INSERT TABLE HERE
+PLDM for Firmware Update DSP0267 | Implementation
+:-| :-|
+0x01 QueryDeviceIdentifiers | Required
+0x02 GetFirmwareParameters | Required
+0x03 QueryDownstreamDevices | Required
+0x04 QueryDowstreamIdentifiers | Required
+0x05 GetDownstreamFirmwareParameters  | Required
+0x10 RequestUpdate | Required
+0x13 PassComponentTable | Required
+0x14 UpdateComponent | Required
+0x15 RequestFirmwareData | Required
+0x16 TransferComplete | Required
+0x17 VerifyComplete | Required
+0x18 ApplyComplete | Required
+0x1A ActivateFirmware| Required
+0x1B GetStatus  | Required
+0x1B GetStatus | Required
+0x1C CancelUpdateComponent | Required
+0x1D CancelUpdate | Required
+0x20 RequestDownstreamDeviceUpdate | Required
+
+
 
 SMC devices shall be required to be updated in 1 minute or less, measured in the time that the device is unavailable, and 5 minutes or less from the time the update is requested, including all data transfers to the device.
 
