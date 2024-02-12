@@ -1,4 +1,3 @@
-
 <h1 align=center> Open Compute Project  </h1>
 
 
@@ -136,8 +135,18 @@ The creation of a truly interoperable telemetry environment will allow businesse
 no matter the size, to more effectively meet sustainability targets. SMC thermal and power
 management capabilities can be utilized to enable this goal of minimizing power requirements
 and overall energy usage
+
 ### 3. Change Log
-Insert this
+
+Date | Version # | Author | Description
+:- | :- | :- | :- |
+7/5/2022 | 0.1 | Chad Yoshikawa | Filled in Title, Authors, Contributors and sections 1-3
+10/1/2022 | 0.2 | Ed Tanous | Major reorganization. Rewrites to many sections
+4/27/2023 | 0.3 | Ed Tanous | Removal of old text, formatting cleanups
+9/15/2023 | 1.0 | Chad Yoshikawa | Used recent
+2/12/2024 | 1.0 | Gregg Shick | Convert to markdown
+
+
 
 ### 4. Overview
 The Satellite Management Controller specification defines a validatable management interface
