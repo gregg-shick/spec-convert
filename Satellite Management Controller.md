@@ -53,12 +53,23 @@ words, terminal hardware does not itself manage other hardware. Satellites are t
 
 #### 1.1 OPTION B: Open Web Foundation (OWF) CLA
 Contributions to this Specification are made under the terms and conditions set forth in Modified OWF-CLA-1.0.2 (As of June 1, 2023) (“Contribution License”) by:  
-**Google**  
-&nbsp;&nbsp;nchadyoshikawa@google.com  
-edtanous@google.com  
-**HPE**
-jeff.hilland@hpe.com  
-gregg.shick@hpe.com
+**Google** 
+>chadyoshikawa@google.com  
+>edtanous@google.com  
+
+**HPE**  
+>jeff.hilland@hpe.com  
+>gregg.shick@hpe.com
+
+**Meta**
+>patrickw3@fb.com
+
+**Samsung**  
+>changho.c@samsung.com  
+>kavin.lee@samsung.com  
+>bj20.kim@samsung.com  
+>mike.allison@samsung.com  
+
 
 #### 1.2 Acknowledgements
 The Contributors of this Specification would like to acknowledge the following companies for their feedback:
