@@ -50,8 +50,17 @@ any CPU architecture and configuration is acceptable.
 words, terminal hardware does not itself manage other hardware. Satellites are terminal hardware.
 
 ### 1. License
-INSERT THIS
-### 1.2 Acknowledgements
+
+#### 1.1 OPTION B: Open Web Foundation (OWF) CLA
+Contributions to this Specification are made under the terms and conditions set forth in Modified OWF-CLA-1.0.2 (As of June 1, 2023) (“Contribution License”) by:  
+**Google**  
+&nbsp;&nbsp;nchadyoshikawa@google.com  
+edtanous@google.com  
+**HPE**
+jeff.hilland@hpe.com  
+gregg.shick@hpe.com
+
+#### 1.2 Acknowledgements
 The Contributors of this Specification would like to acknowledge the following companies for their feedback:
 
 Hewlett Packard Enterprise  
@@ -60,7 +69,7 @@ Samsung
 Dell  
 Meta
 
-### 1.3 References
+#### 1.3 References
 Insert this
 
 ### 2. Compliance with OCP Tenants
