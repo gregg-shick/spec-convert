@@ -211,7 +211,18 @@ Numbers”
 * Support Section “Prepare for Endpoint Discovery”
 * Support Section “Endpoint Discovery”
 
-INSERT TABLE HERE
+MCTP Control Command (DSP0236) | Implementation
+:- | :- |
+0x01 Set Endpoint ID | Required
+0x02 Get Endpoint ID | Required
+0x03 Get Endpoint UUID | Required
+0x04 Get MCTP Version Support | Required
+0x05 Get Message Type Support | Required
+0x06=Get Vendor Defined Message Support | Required
+0x0B=Prepare for Endpoint Discovery  | Required (PCIe VDM)
+0x0C=Endpoint Discovery  | Required (PCIe VDM)
+0x0D=Discovery Notify  | Required (PCIe VDM)
+
 
 ##### 5.2.2 PLDM
 
