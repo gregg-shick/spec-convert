@@ -250,8 +250,9 @@ Devices should be capable of returning the requested portions of the Redfish tre
 
 RDE Command (DSP0218) | | Implementation
 :- | :- | :- |
-0x01 NegotiateRedfishParameters | | Required
-&nbsp;  | DeviceCapabilities | Support atomic resource read to enable consistent reads
+0x01 NegotiateRedfishParameters | Response Data | Required
+&nbsp;  | DeviceCapabilitiesFlags | Support atomic resource read to enable consistent reads
+&nbsp; | DeviceFeatureSupport | Head and replace optional. Read mandatory. Other features are optional for inventory-only devices and mandatory for full support.
 
 
 
