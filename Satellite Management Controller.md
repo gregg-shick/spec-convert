@@ -226,7 +226,19 @@ MCTP Control Command (DSP0236) | Implementation
 
 ##### 5.2.2 PLDM
 
-INSERT TABLE HERE
+PLDM Me
+:- | :- |
+0x01 SetTID | Required
+0x02 GetTID | Required
+0x03 GetPLDMVersion | Required
+0x04 GetPLDMTypes | Required
+0x05 GetPLDMCommands  | Required
+0x06 SelectPLDMVersion  | Required
+0x07 NegotiateTransferParameters | Required for PLDM FW Multipart
+0x08 MultipartSend | Required
+0x09 MultipartReceive | Required 
+
+
 
 ##### 5.2.3 Redfish Device Enablement
 
