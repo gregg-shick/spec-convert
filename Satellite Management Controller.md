@@ -306,10 +306,31 @@ For SMC devices, this shall be set to True.
 * **AdditionalVersions**: Devices that fit the Redfish descriptions in these properties
 shall implement AdditionalVersions, with the appropriate subproperties. Devices that do not fit the description shall omit the AdditionalVersions Property.
 
-Devices implementing a single updatable component should implement updates of their firmware via PLDM type 5 (DSP0267 Section 6).
+Devices implementing a single updatable component should implement updates of their firmware via PLDM type 5 ([DSP0267 Section 6](https://www.dmtf.org/dsp/DSP0267)).
 
+INSERT TABLE HERE
 
+SMC devices shall be required to be updated in 1 minute or less, measured in the time that the device is unavailable, and 5 minutes or less from the time the update is requested, including all data transfers to the device.
 
+#### 6.4 Fan Control  
 
+SMC devices containing fans shall implement control and monitoring of those fans through the RDE interface. Devices shall support the Redfish Control schema for fan control within a system. SMC devices may run internal control loops in addition to the control loops presented on the RDE interface.
 
+#### 6.5 Power Management  
 
+If an SMC device supports reset, the Redfish Chassis.Reset action shall be supported.  
+
+If an SMC device captures power metrics, the SMC EnvironmentMetric and Sensor collection shall implement the following properties where supported:
+
+- EnergykWh or EnergyJoules
+- PowerWatts
+- PowerLimitWatts
+- ResetMetrics
+- AverageReading
+- AveragingInterval
+
+#### 6.6 Security  
+
+Sync with the OCP Security Group around these requirements is required.  
+[Security Protocol and Data Model (SPDM) Specification](https://www.dmtf.org/dsp/DSP0274)
+  
