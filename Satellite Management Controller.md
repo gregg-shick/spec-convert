@@ -248,7 +248,12 @@ Devices *shall* support 1 and should support a minimum of 4 concurrent RDE tree 
 
 Devices should be capable of returning the requested portions of the Redfish tree in less than 2 seconds.
 
-INSERT TABLE  HERE
+RDE Command (DSP0218) | | Implementation
+:- | :- | :- |
+0x01 NegotiateRedfishParameters | | Required
+:- | :- | :- |
+
+
 
 #### 5.3 Device Identification
 
