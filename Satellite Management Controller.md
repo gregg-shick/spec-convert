@@ -435,6 +435,9 @@ SPDM Request Codes (DSP0274) | &nbsp; | Implementation
 0xE3 NEGOTIATE_ALGORITHMS | &nbsp; | Required
 &nbsp; | BaseAsymAlgo<br> - [Bit 2] TPM_ALG_RSASSA_3072 [CMA, CNSA,OCP] (Allowed)<br> - [Bit 4) TPM_ALG_ECDSA_ECC_NIST_P256[CMA] (Allowed)<br> - [Bit 7] TPM_ALG_ECDSA_ECC_NIST_P384[CMA, CNSA, OCP] (Preferred) | &nbsp;
 &nbsp; | BaseHashAlgo<br> - [Bit 0] TPM_ALG_SHA_256 [CMA] (Allowed)<br> - [Bit 1] TPM_ALG_SHA_384 [CMA, CNSA, OCP] (Preferred) | &nbsp;
+&nbsp; | MeasurementHashAlgo<br> - [Bit 1] TPM_ALG_SHA_256 [CMA] (Allowed)<br> - [Bit 2] TPM_ALG_SHA_384 [CMA, CNSA, OCP] (Preferred) | &nbsp;
+0xFF RESPOND_IF_READY | &nbsp; | Required
+
 
 
 
