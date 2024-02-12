@@ -299,7 +299,9 @@ The following device classes are supported: Accelerator, NIC, DPU (SmartNIC), St
 
 The below table calls out for the various device classes, whether a given feature is Required (R) or Conditional (C) on existence of the feature. For example, an Accelerator device may not have a Fan and thus Fan Control is conditional.
 
-Insert table here
+Subsystem | Thermal | Inventory | Software Management | Fan Control | Security | Power Management
+:- | :-: | :-: | :-: | :-: | :-: | :-:
+
 
 #### 6.1 Thermal management
 
