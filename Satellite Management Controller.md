@@ -69,7 +69,7 @@ Contributions to this Specification are made under the terms and conditions set 
 >changho.c@samsung.com  
 >kavin.lee@samsung.com  
 >bj20.kim@samsung.com  
->mike.allison@samsung.com>
+>mike.allison@samsung.com  
 
 Usage of this Specification is governed by the terms and conditions set forth in **Modified OWFa1.0.2 Final Specification Agreement (FSA) (As of June 1, 2023) (“Specification License”)**.
 You can review the applicable Specification License(s) referenced above by the contributors to this Specification on the OCP website at http://www.opencompute.org/participate/legal-documents/. For actual executed copies of either agreement, please contact OCP directly.
@@ -96,7 +96,13 @@ Meta
 - DMTF DSP0233 - [Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)
 - DMTF DSP0236 - [Management Component Transport Protocol (MCTP) Base Specification](https://www.dmtf.org/dsp/DSP0236)
 - DMTF DSP0237 - [Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)
-  
+- DMTF DSP0238 - 
+- DMTF DSP0240 - 
+- DMTF DSP0241 - 
+- DMTF DSP0248 - 
+- DMTF DSP0267 - 
+- DMTF DSP0274 - 
+    
 
 
 ### 2. Compliance with OCP Tenants
