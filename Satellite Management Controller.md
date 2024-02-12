@@ -301,6 +301,12 @@ The below table calls out for the various device classes, whether a given featur
 
 Subsystem | Thermal | Inventory | Software Management | Fan Control | Security | Power Management
 :- | :-: | :-: | :-: | :-: | :-: | :-:
+*Accelerator* | R | R | R | C | R | C
+*NICs* | C | R | R | C | R | C
+*DPUs* | R | R | R | C | R | C
+*Storage Tray* | C | R | R | C | R | C
+*Memory (CXL)* | R | R | C | C | R | C
+
 
 
 #### 6.1 Thermal management
