@@ -248,7 +248,7 @@ Devices *shall* support 1 and should support a minimum of 4 concurrent RDE tree 
 
 Devices should be capable of returning the requested portions of the Redfish tree in less than 2 seconds.
 
-RDE Command (DSP0218) | Response Data| Implementation
+RDE Command (DSP0218) | &nbsp; | Implementation
 :- | :- | :- |
 0x01 NegotiateRedfishParameters | &nbsp; | Required
 &nbsp;  | DeviceCapabilitiesFlags | Support atomic resource read to enable consistent reads
@@ -263,13 +263,20 @@ RDE Command (DSP0218) | Response Data| Implementation
 0x0A SelectRegistryVersion | &nbsp; | Required for full event support
 0x0B GetMessageRegistry | &nbsp; | Required for full event support
 0x10 RDEOperationInit | &nbsp; | Required for full event support
-&nbsp; | Operation Type | The type of Redfish Operation being performed
 &nbsp; | 0=OPERATION_HEAD | Required
 &nbsp; | 1=OPERATION_READ | Required
 &nbsp; | 2=OPERATION_CREATE | Conditional - Required for write support
-&nbsp; | 3=OPERATION_DELETE | RequConditional - Required for write supportired
+&nbsp; | 3=OPERATION_DELETE | Conditional - Required for write supportired
 &nbsp; | 4=OPERATION_UPDATE | Conditional - Required for write support
 &nbsp; | 6=OPRERATION_ACTION | Conditional - Required for write support
+0x11 SupplyCustomRequestParameters | &nbsp; | Required
+0x12 RetrieveCustomResponseParameters | &nbsp; | Required
+0x13 RDEOperationComplete | &nbsp; | Required
+0x14 RDEOperationStatus | &nbsp; | Required
+0x16 RDEOperationEnumerate | &nbsp; | Required
+0x30 RDEMultipartSend | &nbsp; | Required for write support
+0x31 RDEMultipartReceive | &nbsp; | Required
+
 
 
 #### 5.3 Device Identification
