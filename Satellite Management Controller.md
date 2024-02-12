@@ -418,7 +418,14 @@ If an SMC device captures power metrics, the SMC EnvironmentMetric and Sensor co
 
 Sync with the OCP Security Group around these requirements is required.  [Security Protocol and Data Model (SPDM) Specification](https://www.dmtf.org/dsp/DSP0274)
 
-INSERT TABLE HERE
+SPDM Request Codes (DSP0274) | &nbsp; | Implementation
+:-| :-| :-|
+0x81 GET_DIGESTS | &nbsp; | Required
+0x82 GET_CERTIFCATE | &nbsp; | Required
+0x83 CHALLENGE | &nbsp; | Required
+0x84 GET_VERSION | &nbsp; | Required
+0xE0 GET_MEASUREMENTS | &nbsp; | Required
+
 
 **Security Requirements**  
 
