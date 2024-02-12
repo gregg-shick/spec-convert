@@ -263,8 +263,8 @@ RDE Command (DSP0218) | Response Data| Implementation
 0x0A SelectRegistryVersion | &nbsp; | Required for full event support
 0x0B GetMessageRegistry | &nbsp; | Required for full event support
 0x10 RDEOperationInit | &nbsp; | Required for full event support
-
-
+&nbsp; | Operation Type | The type of Redfish Operation being performed
+&nbsp; | 0=OPERATION_HEAD | Required
 
 
 #### 5.3 Device Identification
