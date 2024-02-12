@@ -426,6 +426,13 @@ SPDM Request Codes (DSP0274) | &nbsp; | Implementation
 0x84 GET_VERSION | &nbsp; | Required
 0xE0 GET_MEASUREMENTS | &nbsp; | Required
 &nbsp; | MEAS_CAP=10b | Required
+&nbsp; | DMTFSpecMeasurementValueType<br> - [00h] Immutable Rom<br> - [01h] Mutable FW | Required
+0xE1 GET_CAPABILITIES | &nbsp; | Required
+&nbsp; | CERT_CAP | Required
+&nbsp; | CHAL_CAP | Required
+&nbsp; | MEAS_CAP | Required
+0xE1 GET_CAPABILITIES | &nbsp; | Required
+0xE3 NEGOTIATE_ALGORITHMS | &nbsp; | Required
 
 
 
