@@ -331,6 +331,5 @@ If an SMC device captures power metrics, the SMC EnvironmentMetric and Sensor co
 
 #### 6.6 Security  
 
-Sync with the OCP Security Group around these requirements is required.  
-[Security Protocol and Data Model (SPDM) Specification](https://www.dmtf.org/dsp/DSP0274)
+Sync with the OCP Security Group around these requirements is required.  [Security Protocol and Data Model (SPDM) Specification](https://www.dmtf.org/dsp/DSP0274)
   
