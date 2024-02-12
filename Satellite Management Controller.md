@@ -226,7 +226,7 @@ MCTP Control Command (DSP0236) | Implementation
 
 ##### 5.2.2 PLDM
 
-PLDM Me
+PLDM Messaging Control and DiscoveryCommand Codes (DSP0240) | Implementation
 :- | :- |
 0x01 SetTID | Required
 0x02 GetTID | Required
