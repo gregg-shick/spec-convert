@@ -265,6 +265,11 @@ RDE Command (DSP0218) | Response Data| Implementation
 0x10 RDEOperationInit | &nbsp; | Required for full event support
 &nbsp; | Operation Type | The type of Redfish Operation being performed
 &nbsp; | 0=OPERATION_HEAD | Required
+&nbsp; | 1=OPERATION_READ | Required
+&nbsp; | 2=OPERATION_CREATE | Conditional - Required for write support
+&nbsp; | 3=OPERATION_DELETE | RequConditional - Required for write supportired
+&nbsp; | 4=OPERATION_UPDATE | Conditional - Required for write support
+&nbsp; | 6=OPRERATION_ACTION | Conditional - Required for write support
 
 
 #### 5.3 Device Identification
