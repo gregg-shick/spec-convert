@@ -20,6 +20,32 @@ Author: Kavin Lee
 Author: BJ Kim  
 Author: Mike Allison  
 
+### Table of Contents
+
+**1. License**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1 OPTION B: Open Web Foundation (OWF) CLA  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2 Acknowledgements  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.3 References  
+**2. Compliance with OCP Tenets**  
+**3. Change Log**  
+**4. Overview**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1 Architectural Example  
+**5. Protocols**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1 Physical bindings supported  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2 Protocol layers supported  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2.1 MCTP  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2.2 PLDM  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2.3 Redfish Device Enablement  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.3 Device identification  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.4 Device Classes  
+**6. API surface**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1 Thermal management     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.2 Inventory management      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.3 Software management    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.4 Fan control  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.5 Power Management     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.6 Security  
+
 ### Glossary of Terms
 
 This section provides definitions for terms used in this document.  
