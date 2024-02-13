@@ -213,7 +213,7 @@ Numbers”
 * Support Section “Prepare for Endpoint Discovery”
 * Support Section “Endpoint Discovery”
 
-MCTP Control Command (DSP0236) | Implementation
+MCTP Control Command ([DSP0236](https://www.dmtf.org/dsp/DSP0236)) | Implementation
 :- | :- |
 0x01 Set Endpoint ID | Required
 0x02 Get Endpoint ID | Required
@@ -228,7 +228,7 @@ MCTP Control Command (DSP0236) | Implementation
 
 ##### 5.2.2 PLDM
 
-PLDM Messaging Control and DiscoveryCommand Codes (DSP0240) | Implementation
+PLDM Messaging Control and DiscoveryCommand Codes ([DSP0240](https://www.dmtf.org/dsp/DSP0240)) | Implementation
 :- | :- |
 0x01 SetTID | Required
 0x02 GetTID | Required
@@ -250,7 +250,7 @@ Devices *shall* support 1 and should support a minimum of 4 concurrent RDE tree 
 
 Devices should be capable of returning the requested portions of the Redfish tree in less than 2 seconds.
 
-RDE Command (DSP0218) | &nbsp; | Implementation
+RDE Command ([DSP0218](https://www.dmtf.org/dsp/DSP0218)) | &nbsp; | Implementation
 :- | :- | :- |
 0x01 NegotiateRedfishParameters | &nbsp; | Required
 &nbsp;  | DeviceCapabilitiesFlags | Support atomic resource read to enable consistent reads
@@ -374,7 +374,7 @@ shall implement AdditionalVersions, with the appropriate subproperties. Devices 
 
 Devices implementing a single updatable component should implement updates of their firmware via PLDM type 5 ([DSP0267 Section 6](https://www.dmtf.org/dsp/DSP0267)).
 
-PLDM for Firmware Update DSP0267 | Implementation
+PLDM for Firmware Update [DSP0267](https://www.dmtf.org/dsp/DSP0267) | Implementation
 :-| :-|
 0x01 QueryDeviceIdentifiers | Required
 0x02 GetFirmwareParameters | Required
@@ -420,7 +420,7 @@ If an SMC device captures power metrics, the SMC EnvironmentMetric and Sensor co
 
 Sync with the OCP Security Group around these requirements is required.  [Security Protocol and Data Model (SPDM) Specification](https://www.dmtf.org/dsp/DSP0274)
 
-SPDM Request Codes (DSP0274) | &nbsp; | Implementation
+SPDM Request Codes ([DSP0274](https://www.dmtf.org/dsp/DSP0274)) | &nbsp; | Implementation
 :-| :-| :-|
 0x81 GET_DIGESTS | &nbsp; | Required
 0x82 GET_CERTIFCATE | &nbsp; | Required
