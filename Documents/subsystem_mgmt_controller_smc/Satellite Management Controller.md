@@ -333,7 +333,32 @@ Devices implementing a single replaceable component may implement PLDM type 2 fo
 
 **PLDM Type 2 Sensor Requirements**
 
-Insert table here
+PLDM for Platform Monitoring and Control ([DSP0248](https://www.dmtf.org/dsp/DSP0248)) | &nbsp; | Implementation
+:- | :- | :- |
+Terminus Command | &nbsp; | &nbsp;
+&nbsp; | 0x04 SetEventReceiver | Required for RDE Alert
+&nbsp; | 0x05 GetEventReceiver | Required for RDE Alert
+&nbsp; | 0x0B PollForPlatformEventMessage | Required for RDE Alert
+&nbsp; | 0x0C EventMessageSupported | Required
+&nbsp; | 0x0D EventMessageBufferSize | Required for RDE Alert if MSG size > 256 bytes
+Numeric Sensor Commands | &nbsp; | &nbsp;
+&nbsp; | 0x11 GetSensorReading | Required
+&nbsp; | 0x12 GenSensorThreshold | Required
+&nbsp; | 0x15 GetSensorHysteresis | Required
+State Sensor Commands | &nbsp; | &nbsp;
+&nbsp; | 0x21 GetStateSensorReadings | Required
+PDR Repository Commands | &nbsp; | &nbsp;
+&nbsp; | 0x50 GetPDRRepositoryInfo | Required
+&nbsp; | 0x51 GetPDR | Required
+&nbsp; | 0x53 GetPDRRepositorySignature | Required for RDE
+PLDM Event Types | &nbsp; | &nbsp;
+&nbsp; | 0x02 redfishTaskExecutedEvent | Required if implementation cannot complete commands quickly enough to avoid spawning RDE tasks
+&nbsp; | 0x03 redfishMessageEvent | Required for redfish eventing
+&nbsp; | 0x51 GetPDR | Required for RDE
+PDR Type Values | &nbsp; | &nbsp;
+&nbsp; | 2 = Numeric Sensor PDR | Required
+&nbsp; | 4= State Sensor PDR | Required
+&nbsp; | 22 = Redfish Resource PDR | Required for RDE
 
 
 Devices implementing multiple replaceable components shall implement ThermalSubsystem over RDE.
