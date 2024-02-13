@@ -167,9 +167,9 @@ power management operations. These SLOs may impose constraints on the underlying
 For example, timely firmware update may require i3c (vs. i2c) or higher-bandwidth management
 links.  
 
-#### 4.1 Architectural Example
+#### 4.1 Architectural Example  
 
-![SMC Architectural Example Diagram](content/smc_arch.jpg)
+![SMC Architectural Example Diagram](assets/images/smc_arch.png)
 
 SMC includes all API definitions required for managing a peripheral device from an out of band
 management controller (BMC) in the most common configuration. While other configurations may
@@ -190,7 +190,7 @@ SMC devices *shall* implement DMTF DSP0236 ([Management Component Transport Prot
 #### 5.1 Physical Bindings supported
 Devices meeting this specification *shall* implement DMTF DSP0233 ([Management Component Transport Protocol (MCTP) I3C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0233)) OR DSP0237 ([Management Component Transport Protocol (MCTP) SMBus/I2C Transport Binding Specification](https://www.dmtf.org/dsp/DSP0237)) OR DSP0238 ([Management Component Transport Protocol (MCTP) PCIe VDM Transport Binding Specification](https://www.dmtf.org/dsp/DSP0238)). Other physical bindings such as USB, that have MCTP bindings are allowed. Devices *shall* implement these protocols without requiring an on-board i2c mux in the protocol path.
 
-iINSERT IMAGE HERE
+![SMC Architectural Example Diagram](assets/images/smc_layers.png)
 
 #### 5.2 Protocol layers supported
 
