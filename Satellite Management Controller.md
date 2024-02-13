@@ -169,7 +169,7 @@ links.
 
 #### 4.1 Architectural Example
 
-! [SMC Architectural Example Diagram] (content/smc_arch.jpg)
+![SMC Architectural Example Diagram](content/smc_arch.jpg)
 
 SMC includes all API definitions required for managing a peripheral device from an out of band
 management controller (BMC) in the most common configuration. While other configurations may
